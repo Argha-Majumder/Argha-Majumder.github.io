@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* title of the project  */
+.project-title {
+    text-align: center;
+    color: wheat;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* main div  */
+#main {
+    border: 4px solid white;
+    min-height: 400px;
+    width: 50%;
+    border-radius: 20px;
+    background: linear-gradient(
+        135deg,
+        #9cc0e0 50%,
+        #1b72b2 50%
+    );
+    overflow-y: hidden;
+}
+
+/* clock face  */
+#clock {
+    height: 120px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* the set alarm button */
+.openBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.openButton {
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+/* the window to set the alarm */
+.set-alarm-popup {
+    border: 1px solid black;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left: calc(100vw - 75%);
+    width: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.alarmpopup {
+    position: absolute;
+    display: none;
+    left: 0%;
+    top: 0%;
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    z-index: 9;
+    transition: top 0.5s ease;
+} 
+
+
+#alarm-details {
+    top: 20%;
+    height: 70px;
+    width: 100%;
+    border: 1px solid black;
+    font-size: large;
+    background-color: #1c87c9;
+}
+
+.alarm-edit {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2.8em;
+    color: white;
+}
+
+.elements {
+    position: relative;
+    /* border: 1px solid black; */
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.elements span {
+    font-weight: bold;
+}
+
+#hours {
+    width: 220px;
+}
+
+#clockhrs {
+    height: 28px;
+    width: 200px;
+}
+
+#minutes {
+    width: 220px;
+}
+
+#clockmins {
+    height: 28px;
+    width: 200px;
+}
+
+
+#seconds {
+    width: 220px;
+}
+
+#clocksecs {
+    height: 28px;
+    width: 200px;
+}
+
+#am-pm {
+    width: 220px;
+}
+
+#ampm {
+    height: 28px;
+    width: 200px;
+}
+
+#alarm-title {
+    width: 600px;
+}
+
+#alarm-title input {
+    width: 540px;
+    height: 28px;
+}
+
+#button-change {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 12px 20px;
+    /* margin: 5px; */
+    border: none;
+    background-color: #1c87c9;
+    color: #fff;
+    cursor: pointer;
+    width: 18%;
+}
+
+.cancel {
+    background-color: #cc0000;
+}
+
+.btn:hover, .openButton:hover {
+    opacity: 1;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+/* these two will appear when someone sets the alarm */
+#alarm-lists {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.alarm-details {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
