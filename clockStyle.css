@@ -217,3 +217,50 @@ h1 {
     margin-bottom: 5px;
 }
 
+@media only screen and (max-width: 600px) {
+    
+    #alarm-details {
+        padding: 15px;
+    }
+
+    .alarm-edit {
+        text-align: center;
+        padding: 10px;
+        font-size: 1.5em;
+    }
+
+    #clockhrs {
+        height: 28px;
+        width: 100px;
+    }
+
+    #clockmins {
+        height: 28px;
+        width: 100px;
+    }
+
+    #clocksecs {
+        height: 28px;
+        width: 100px;
+    }
+
+    #ampm {
+        height: 28px;
+        width: 100px;
+    }
+
+    #alarm-title {
+        width: 300px;
+    }
+
+    #alarm-title input {
+        width: 240px;
+        height: 28px;
+    }
+    
+    .btn {
+        width: 70px;
+        padding: 10px;
+    }
+}
+
